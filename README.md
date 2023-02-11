@@ -8,7 +8,7 @@ Basically, this small addon to your Marble Blast Gold experience will add a "Ran
 
 Additionally, when you Randomize, you can check the Console to see what level the Randomizer picked if, for whatever reason, you want to go back to that level later and want to know where it is.
 
-## Instructions on installing the Randomizer Button (Windows)
+## Instructions on installing the Randomizer Button
 1) Download the repo.
 2) Dump it in the root directory of your Vanilla MBG copy (i.e.: where the marbleblast.exe file is located)
 
