@@ -692,7 +692,7 @@ function PM_setRandom()
 	
 	if (%levelselected != 0)
 	{
-            PM_setSelected(%levelselected);
+            PM_setSelected(%levelselected - 1);
 	}
 
 	echo("Level Selected: " @ $MissionType @ " " @ %levelselected);  //In case you want to keep in mind what level you played/picked for later. ~Connie
