@@ -12,6 +12,6 @@ Additionally, when you Randomize, you can check the Console to see what level th
 1) Download the repo.
 2) Dump the "marble" folder in the root directory of your Vanilla MBG copy (i.e.: where the marbleblast.exe file is located)
 
-**NOTE:** Make sure that your playmissiongui.gui file (if you even have it) isn't already modded with something else, seeing as dumping the repo files into your copy of Marble Blast Gold would overwrite whatever you had modified on that file. I would advice you to make a copy of that file if you have it and have modified it.
+**NOTE:** Make sure that your playmissiongui.gui file (if you even have it) isn't already modded with something else, seeing as dumping the repo files into your copy of Marble Blast Gold would overwrite whatever you had modified on that file. I would advice you to make a copy of that file for backup if you have it and have modified it.
 
 3) Have fun!
