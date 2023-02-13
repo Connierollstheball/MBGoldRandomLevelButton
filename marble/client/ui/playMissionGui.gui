@@ -683,17 +683,17 @@ function getMissionObject( %missionFile )
 
 function PM_setRandom()
 {
-    %levelselected = getRandom(PM_missionList.rowCount());
+   if ($pref::QualifiedLevel[$MissionType] > PM_missionList.rowCount()) {
+      %levelselected = getRandom(PM_missionList.rowCount());
+   } else {
+      %levelselected = getRandom(PM_missionList.rowCount() - (PM_missionList.rowCount() - $pref::QualifiedLevel[$MissionType]));
+   }
 
-	if (%levelselected == 0)
-	{
-	    %levelselected = 1;  //Because "Level 0" doesn't exist in any category. ~Connie
-	}
-	
-	if (%levelselected != 0)
-	{
-            PM_setSelected(%levelselected - 1);
-	}
+   if (%levelselected > PM_missionList.rowCount() - 1) {
+      %levelselected = PM_missionList.rowCount() - 1;
+   }
 
-	echo("Level Selected: " @ $MissionType @ " " @ %levelselected);  //In case you want to keep in mind what level you played/picked for later. ~Connie
+   PM_setSelected(%levelselected);
+
+	echo("Level Selected: " @ $MissionType @ " " @ %levelselected + 1);
 }
